@@ -1,0 +1,22 @@
+@startuml 
+title Process
+	Partition Elector {
+	    (*) --> "Go to the assigned cabin"
+        ===show=== --> "observe list"
+        ===show2=== --> "Order again"
+	    "Order again" --> "Enter DNI"
+	    "observe list" --> "Vote"
+	}
+	
+	Partition System {
+	    "Go to the assigned cabin" --> "Enter DNI"
+	    "Enter DNI" --> "Verify"
+	    if "Exists?" then
+	    ->[yes] ===show===
+	    else
+	    ->[No] ===show2===
+	    "Vote" --> "Save"
+	    "Save" --> "Show"
+	    ->(*)
+	}
+@enduml

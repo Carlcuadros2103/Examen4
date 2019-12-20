@@ -1,0 +1,21 @@
+@startuml
+title Clases
+	class elector {
+	    String DNI
+	    String mail
+	    String password
+	}
+	class candidate {
+	    int list
+	    String name
+	}
+	class cabin {
+	    int numVotes
+	    String location
+	    Date date
+	    Time time
+	}
+	
+	cabin "1" --o "1..*" elector
+	cabin "1" --* "1..*" candidate
+@enduml
