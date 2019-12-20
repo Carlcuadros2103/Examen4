@@ -1,0 +1,3 @@
+La mejor descicion para este sistema es que debe estar en PHP, porque es mas
+accesible al programador web, y como DB a MySQL, porque esta es para DB's
+simples y sin mucha funcionalidad.
