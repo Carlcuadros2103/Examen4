@@ -38,6 +38,10 @@ class ElectorController extends Controller
     public function store(Request $request)
     {
         //
+		//$datosElector=request()->all();
+		$datosElector=request()->except('_token');
+	    Elector::insert($datosElector);
+		return response()->json($datosElector);
         return view('/candidate/vote');
     }
 
