@@ -8,8 +8,8 @@ Crear datos del elector
     <label for="mail">{{'correo'}}</label>
     <input type="text" name="mail" id="mail" value="">
     <br/>
-    <label for="password">{{'Apellidos'}}</label>
-    <input type="text" name="password" id="password" value="">
+    <label for="password">{{'Contraseña'}}</label>
+    <input type="password" name="password" id="password" value="">
     <br/>
     <input type="submit" value="Agregar">
 </form>
